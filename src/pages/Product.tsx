@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Interface para o tipo Produto
-interface Produto {
+interface Product {
   id_produto: number;
   nome: string;
   descricao: string;
@@ -9,7 +9,7 @@ interface Produto {
 }
 
 // produtos
-const produtos: Produto[] = [
+const produtos: Product[] = [
   {
     id_produto: 1,
     nome: 'Agua mineral',
@@ -55,7 +55,7 @@ const produtos: Produto[] = [
  
 ];
 
-const ListaProdutos: React.FC = () => {
+const Product: React.FC = () => {
   return (
     <div className="bg-[#400101] text-white font-sans min-h-screen py-8">
       <div className="container mx-auto px-4">
@@ -83,4 +83,4 @@ const ListaProdutos: React.FC = () => {
   );
 };
 
-export default ListaProdutos;
+export default Product;

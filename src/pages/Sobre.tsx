@@ -2,12 +2,12 @@ import React from 'react';
 
 const Sobre: React.FC = () => {
   return (
-    <div className="bg-[#400101] text-white font-sans min-h-screen py-8">
+    <div className="flex-grow flex flex-col justify-center items-center bg-[hsl(50,94%,94%)]">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8" style={{ color: '#F2B705' }}>Sobre Nós</h1>
+        <h1 className="text-4xl font-bold text-center mb-4" style={{ color: '#F2B705' }}>Sobre Nós</h1>
 
         {/* Grid para os Integrantes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3">
             
           {/* Integrante 1 */}
           <div className="bg-[#BF3604] rounded-lg shadow-lg p-6 flex flex-col items-center">
@@ -19,7 +19,7 @@ const Sobre: React.FC = () => {
             <h2 className="text-xl font-semibold" style={{ color: '#F29F05' }}>Beatriz Santina</h2>
             <p className="text-center mt-2"></p>
             <a href="https://github.com/krocodaimon" target="_blank" rel="noopener noreferrer" className="mt-4">
-              <img
+              <img         
                 src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                 alt="GitHub"
                 className="w-8 h-8"
