@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
-    <div className="flex-grow flex flex-col justify-center items-center bg-[#FEF9E1]">
+    <div className="flex-grow flex flex-col justify-center items-center bg-[hsl(50,94%,94%)]">
 
       <section className="text-center px-4 mb-6">
         <h2 className="text-3xl font-extrabold text-[#C14600] leading-tight">

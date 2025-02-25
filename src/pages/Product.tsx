@@ -57,9 +57,9 @@ const produtos: Product[] = [
 
 const Product: React.FC = () => {
   return (
-    <div className="bg-[#400101] text-white font-sans min-h-screen py-8">
+    <div className="flex-grow flex flex-col justify-center items-center bg-[hsl(50,94%,94%)]">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8" style={{ color: '#F2B705' }}>Lista de Produtos</h1>
+        <h1 className="text-4xl font-bold text-center mb-5" style={{ color: '#FF9D23' }}>Lista de Produtos</h1>
 
         {/* Grid para os Produtos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -68,10 +68,10 @@ const Product: React.FC = () => {
               key={produto.id_produto}
               className="bg-[#BF3604] rounded-lg shadow-lg p-6 flex flex-col"
             >
-              <h2 className="text-xl font-semibold mb-2" style={{ color: '#F29F05' }}>
+              <h2 className="text-xl font-semibold mb-2" style={{ color: '#fef9e1' }}>
                 {produto.nome}
               </h2>
-              <p className="text-sm mb-4">{produto.descricao}</p>
+              <p className="text-sm mb-4 " style={{color: '#fef9e1'}}>{produto.descricao}</p>
               <p className="text-lg font-bold mt-auto" style={{ color: '#F2B705' }}>
                 R$ {produto.preco.toFixed(2)}
               </p>

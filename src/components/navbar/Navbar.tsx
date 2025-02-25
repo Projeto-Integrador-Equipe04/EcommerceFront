@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
       
 
       <div className="flex space-x-6">
-        <Link to="/" className="text-white text-lg">Home</Link>
-        <Link to="/sobre" className="text-white text-lg">Sobre</Link>
+        <Link to="/" className="text-white text-lg transition-colors duration-300 hover:text-[#FF9D23]">Home</Link>
+        <Link to="/sobre" className="text-white text-lg transition-colors duration-300 hover:text-[#FF9D23]">Sobre</Link>
       </div>
     </nav>
   );
